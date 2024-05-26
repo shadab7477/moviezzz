@@ -1,9 +1,4 @@
-.navbar{
 
-    background-color: black;
-    /* box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-      rgb(0 0 0 / 73%) 0px 16px 10px -10px; */
-}
 
 .navbar-brand  img{
     padding-top: 5px;
@@ -64,6 +59,18 @@ border-bottom: 1px solid white;
   background-color: #040714;
 
   }
+ 
+  .navbar {
+    /* From https://css.glass */
+background: rgba(0, 0, 0, 0.32);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.8px);
+-webkit-backdrop-filter: blur(6.8px);
+}
+ 
+.navbar.colorChange {
+    background-color: #000;
+}
   
   .nav-link{
     color: white;

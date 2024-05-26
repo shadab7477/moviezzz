@@ -1,9 +1,21 @@
 import React from 'react'
 import "./Navbar.css"
-import { useState } from 'react'
+import { useState ,useEffect} from 'react'
 import ham from "./hamburg.png"
 import logo from "./logo.svg"
 const Navi = () => {
+
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+      if (window.scrollY >= 80) {
+          setColorchange(true);
+      } else {
+          setColorchange(false);
+      }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
+
+
 
   const [visible, setVisible] = useState(false); // State to track visibility of search input
 
@@ -11,7 +23,6 @@ const Navi = () => {
     setVisible(!visible); // Toggle visibility state
   };
 
-    const expand="lg"
 
 
 
@@ -23,7 +34,11 @@ const Navi = () => {
 
 
 
-  <nav class="navbar  bg-transparent fixed-top">
+  <nav   className={
+                    colorChange
+                        ? "navbar colorChange"
+                        : "navbar"
+                }>
   <div class="container ">
     <a class="navbar-brand  " href="#">
 

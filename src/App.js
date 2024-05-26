@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Navi from './Navbar/Navbar';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Movieinfo from './components/Movieinfo';
 function App() {
   return (
 <>
@@ -14,6 +15,8 @@ function App() {
 <Routes>
 <Route path='/' element={<Started/>} />
 <Route path='/home' element={<Home/>} />
+<Route path='/home/:id' element={<Movieinfo/>} />
+
 </Routes>
 </>
   );

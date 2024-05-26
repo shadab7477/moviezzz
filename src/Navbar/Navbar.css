@@ -55,17 +55,14 @@ border-bottom: 1px solid white;
   }
   
   .offcanvas{
+    width: 100%;
     color: white;
   background-color: #040714;
 
   }
  
   .navbar {
-    /* From https://css.glass */
-background: rgba(0, 0, 0, 0.32);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6.8px);
--webkit-backdrop-filter: blur(6.8px);
+
 }
  
 .navbar.colorChange {

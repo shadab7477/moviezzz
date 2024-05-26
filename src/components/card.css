@@ -23,6 +23,7 @@ cursor: pointer;
 
 }
   .card {
+    transform: scale(1.1);
     height: 200px;
     background-size: cover;
     background-position: center;
@@ -55,6 +56,8 @@ cursor: pointer;
   }
   
   .card-details {
+    padding: 20px;
+
     position: absolute;
     top: 0;
     left: 0;

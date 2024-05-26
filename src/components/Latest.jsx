@@ -10,8 +10,15 @@ const Latest = () => {
         dots: true,
         infinite: false,
         speed: 500,
+         className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
+    speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
+        
         initialSlide: 0,
         responsive: [
           {
@@ -34,8 +41,9 @@ const Latest = () => {
           {
             breakpoint: 480,
             settings: {
-              initialSlide: 2
-,
+              initialSlide: 1,
+              centerPadding: "30px",
+              
               slidesToShow: 1,
               slidesToScroll: 1
             }

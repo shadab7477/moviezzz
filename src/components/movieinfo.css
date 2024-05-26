@@ -9,7 +9,7 @@
   
   .background {
     left: 0;
-    opacity: 0.1;
+    opacity: 0.2;
     position: fixed;
     right: 0;
     top: 0;
@@ -22,7 +22,7 @@ background-size: cover;
     background-position: contain;
 /* background-size: cover; */
 background-size:cover;
-    /* width: 100%; */
+    width: 100%;
     height: 100vh;
   }
   
@@ -91,7 +91,7 @@ background-size:cover;
   }
   
   .trailer {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(252, 4, 4, 0.521);
     border: 1px solid rgb(249, 249, 249);
     color: rgb(249, 249, 249);
   }
@@ -150,14 +150,33 @@ background-size:cover;
   
   .sub-title {
     color: rgb(249, 249, 249);
-    font-size: 15px;
+    font-size: 25px;
     min-height: 20px;
   }
   
   .description {
     line-height: 1.4;
-    font-size: 20px;
+    font-size: 15px;
     padding: 16px 0;
     color: rgb(249, 249, 249);
   }
   
+  
+@media only screen and (max-width:479px){
+
+    .description {
+        line-height: 1.4;
+        font-size: 10px;
+        padding: 16px 0;
+        color: rgb(249, 249, 249);
+      }
+      
+      
+  .background img {
+    background-position: contain;
+/* background-size: cover; */
+background-size:contain;
+    width: auto;
+    height: 100vh;
+  }
+  }

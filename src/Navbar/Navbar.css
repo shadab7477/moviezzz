@@ -23,7 +23,7 @@ padding: 5px;
 #ham{
     height: 35px;
 }
-.search-container {
+.search-container { 
     position: relative;
   }
   
@@ -47,6 +47,8 @@ margin-right: 5px;
     background-color: transparent;
     border: none
     ;
+    border-radius: none;
+
     font-size: 20px;
     padding: 5px;
 border-bottom: 1px solid white;
@@ -74,8 +76,9 @@ border-bottom: 1px solid white;
   }
 @media only screen and (max-width:479px){
     .search-input.visible {
-        font-size: 10px;
-    width: 130px; /* Set your desired width */
+        font-size: 15px;
+        border-radius: none;
+    width: 150px; /* Set your desired width */
 
     
     }

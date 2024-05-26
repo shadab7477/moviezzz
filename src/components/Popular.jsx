@@ -3,9 +3,11 @@ import axios from "axios"
 import { useState,useEffect } from 'react'
 import Cards from './Cards'
 import Slider from "react-slick";
-import Popular from './Popular';
-const Latest = () => {
+// import Popular from './Popular';
+const Popular = () => {
 
+
+    
     var settings = {
         dots: false,
         infinite: false,
@@ -58,17 +60,17 @@ getmovie()
 }, [])
 
     const getmovie=async()=>{
-        const data=await axios.get("https://api.themoviedb.org/3/movie/now_playing?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US")
+        const data=await axios.get("https://api.themoviedb.org/3/movie/popular?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US")
     setmovie(data.data.results)
     }
 
 
-  return (
-    <div className='container-fluid mt-5 text-centerpt-5 px-4 pb-5 ' >
-      <h4 className='fw-bold text-start  ' >NOW playing</h4>
+  return (<>
+  <div className='  ' >
+      <h4 className='fw-bold text-start  ' >Popular</h4>
 
 
-      <div className="slider-container  ">
+      <div className="slider-container   ">
       <Slider {...settings}>
 
       {movie.map(item => (
@@ -76,11 +78,10 @@ getmovie()
         ))}
           </Slider>
     </div>
-
-<Popular/>
-
     </div>
+  
+  </>
   )
 }
 
-export default Latest
+export default Popular

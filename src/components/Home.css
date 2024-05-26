@@ -1,0 +1,67 @@
+
+
+.mainhome{
+    overflow-x: hidden;
+    background: url("./images/home-background.png") center center / cover
+    no-repeat fixed;
+  content: "";
+  position: absolute;
+  inset: 0px;
+  /* margin-top: 40px; */
+  /* top: 82px; */
+  padding-top: 70px;
+  opacity: 1;
+  z-index: -1;
+}
+
+.mainhome::after{
+    width: 100%;
+    position: relative;
+    min-height: calc(100vh );
+    overflow-x: hidden;
+    display: block;
+    top: 92px;
+    padding: 0 calc(3.5vw + 5px);
+  
+}
+h3{
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+      rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding: 4px;
+text-align: center;
+justify-content: center;
+    background-color: black;
+    min-width: 1000px;
+}
+.slick-prev {
+    left: -75px;
+  }
+
+  .slick-next {
+    right: -75px;
+  }
+
+h3 img{
+    height: 100%;
+   min-width: 90%;
+
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  width: 0;
+  opacity: 0;
+  transition: width 0.3s, opacity 0.3s;
+}
+
+.search-input.visible {
+  width: 200px; /* Set your desired width */
+  opacity: 1;
+}

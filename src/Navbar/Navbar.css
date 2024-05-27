@@ -71,7 +71,11 @@ border-bottom: 1px solid white;
   }
  
   .navbar {
-position: relative;
+    
+    box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+      rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+    background-color: #040714a1;
+position: fixed;
 }
  
 /* .navbar.colorChange {position: fixed;
@@ -82,7 +86,9 @@ position: relative;
     color: white;
   }
 @media only screen and (max-width:479px){
+    
     .search-input.visible {
+        outline: none;
         font-size: 15px;
         border-radius: none;
     width: 150px; /* Set your desired width */

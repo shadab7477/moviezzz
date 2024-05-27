@@ -1,18 +1,11 @@
 .container8 {
     position: relative;
-    /* min-height: calc(100vh - 250px); */
+    min-height: calc(100vh - 250px);
     overflow-x: hidden;
     display: block;
-    top: 22px;
+    top: 82px;
     /* padding: 0 calc(3.5vw + 5px); */
     
-    background: linear-gradient(
-        to bottom
-        rgba(0, 0, 0, 0.883) 0%,
-        rgb(0, 0, 0) 50%,
-        
-        rgb(0, 0, 0) 100%
-      );
   }
   
   .background {
@@ -22,16 +15,16 @@
     right: 0;
     top: 0;
     z-index: -1;
-background-size: cover;
+background-size: contain;
 
   }
   
   .background img {
-    background-position: contain;
-/* background-size: cover; */
+    background-position: cover;
+background-size: contain;
 background-size:cover;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
   }
   
   .image-title {
@@ -186,7 +179,10 @@ background-size:cover;
       #responsiveyt{
         height: 30vh;
       }
-      
+      .container8{
+    top: 42px;
+
+      }
   .background img {
     background-position: contain;
 /* background-size: cover; */

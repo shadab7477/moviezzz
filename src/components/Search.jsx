@@ -26,13 +26,15 @@ console.log(val);
   return (
 
     <>
-    <div className="container pt-4">
-<h5>Results related to {keyword} </h5>
-<div className="row">
+
+
+    <div className="container pt-5 mt-5 ">
+<h5><i class="fa-solid fa-magnifying-glass"></i> Results related to <span className='text-primary' >{keyword}</span>  </h5>
+<div className="row pt-3 ">
     
 {val.map(item => (
 
-    <div className="col-md-3">
+    <div className=" col-6 col-md-3">
           <Cards key={item.id} mov={item}  />
           </div>
         ))}

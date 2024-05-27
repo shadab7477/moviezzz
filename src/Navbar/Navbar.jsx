@@ -41,13 +41,19 @@ const handleSearch = () => {
 };
 
 
+const handleKeyDown = (event) => {
+  if (event.key === 'Enter') {
+    handleSearch();
+  }
+};
+
     
   return (<>
 
 
 
 
-  <nav   className="navbar">
+  <nav   className="navbar fixed-top ">
   <div class="container ">
     <a class="navbar-brand  " href="#">
 
@@ -58,8 +64,10 @@ const handleSearch = () => {
       {/* <button onClick={toggleSearchInput}>Toggle Search</button> */}
     
       <input
+      
       onChange={(e)=>get(e)}
         type="text"
+        onKeyDown={handleKeyDown} 
         className={`search-input ${visible ? 'visible' : ''}`} // Apply 'visible' class when input should be visible
         placeholder="Search movies..."
       /> 

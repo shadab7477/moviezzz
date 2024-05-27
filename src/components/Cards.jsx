@@ -13,7 +13,7 @@ const Cards = ({mov}) => {
 
 
       <div className="movie-card mx-3 mb-5 ">
-      <div className="card" style={{ backgroundImage: `url(https://image.tmdb.org/t/p/original${mov && mov.poster_path})` }}>
+      <div width="100%" className="card" style={{ backgroundImage: `url(https://image.tmdb.org/t/p/original${mov && mov.poster_path})` }}>
         {/* <h1>hey</h1> */}
         
       </div>

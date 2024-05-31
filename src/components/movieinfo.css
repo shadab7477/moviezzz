@@ -152,19 +152,14 @@ background-size:cover;
   }
   
   .sub-title {
-    /* border: 3px solid rgba(2, 49, 107, 0.579); */
-    border-radius: 10px 10px 0px 0px;
     padding: 16px 10px;
 font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.31);
     color: rgb(249, 249, 249);
     font-size: 35px;
     min-height: 20px;
   }
   
   .description {
-border-radius:0px 0px 90px 10px;
-    background-color: rgba(0, 0, 0, 0.31);
     margin-bottom: 80px;
     display: block;
     line-height: 1.4;
@@ -177,10 +172,10 @@ border-radius:0px 0px 90px 10px;
 @media only screen and (max-width:479px){
 
     .description {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
         line-height: 1.4;
-        font-size: 10px;
+        font-size: 12px;
         padding: 16px 0;
         color: rgb(249, 249, 249);
       }

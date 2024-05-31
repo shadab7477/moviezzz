@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import "./movieinfo.css"
 import axios from 'axios'
 import { useState,useEffect } from 'react'
+import group from "./images/group-icon.png"
 const Movieinfo = () => {
     const {id}=useParams()
 
@@ -48,18 +49,12 @@ return (<>
 
   <div class="content-meta">
     <div class="controls">
-      <a href={movie.homepage} class="player">
+       <a href={movie.homepage} class="player">
         <span><i class="fa-solid fa-play"></i> Play</span>
       </a>
-      <button  class="trailer  ">
-        <span>
-      <i class="fa-solid fa-play me-2 "></i>
-           
-              Trailer</span>
-      </button>
       <div class="group-watch">
         <div>
-          <img src="/images/group-icon.png" alt="" />
+          <img src={group} alt="" />
         </div>
       </div>
     </div>

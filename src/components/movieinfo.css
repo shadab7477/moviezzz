@@ -10,7 +10,7 @@
   
   .background {
     left: 0;
-    opacity: 0.2;
+    opacity: 0.3;
     position: fixed;
     right: 0;
     top: 0;
@@ -20,7 +20,8 @@ background-size: contain;
   }
   
   .background img {
-    background-position: cover;
+    position: fixed;
+    background-position: fixed;
 background-size: contain;
 background-size:cover;
     width: 100%;
@@ -151,17 +152,24 @@ background-size:cover;
   }
   
   .sub-title {
+    /* border: 3px solid rgba(2, 49, 107, 0.579); */
+    border-radius: 10px 10px 0px 0px;
+    padding: 16px 10px;
+font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.31);
     color: rgb(249, 249, 249);
-    font-size: 25px;
+    font-size: 35px;
     min-height: 20px;
   }
   
   .description {
-    margin-bottom: 20px;
+border-radius:0px 0px 90px 10px;
+    background-color: rgba(0, 0, 0, 0.31);
+    margin-bottom: 80px;
     display: block;
     line-height: 1.4;
     font-size: 15px;
-    padding: 16px 0;
+    padding: 16px 10px;
     color: rgb(249, 249, 249);
   }
   

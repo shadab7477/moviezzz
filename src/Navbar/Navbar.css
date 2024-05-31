@@ -78,10 +78,15 @@ border-bottom: 1px solid white;
 position: fixed;
 }
  
-/* .navbar.colorChange {position: fixed;
-    background-color: #000;
+#ham:active ,.bi-search:active{
+  transform: scale(1.1);
 }
-   */
+  .navbar-toggler:focus{
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+ 
   .nav-link{
     color: white;
   }

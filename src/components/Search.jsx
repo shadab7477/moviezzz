@@ -34,7 +34,7 @@ console.log(val);
     
 {val.map(item => (
 
-    <div className=" col-12 col-md-3">
+    <div className=" col-12 col-md-3 p-0 ">
           <Cards key={item.id} mov={item}  />
           </div>
         ))}

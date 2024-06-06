@@ -3,7 +3,7 @@ import "./card.css"
 import { Link } from 'react-router-dom'
 const Cards = ({mov}) => {
   return (
-    <Link to={`/${mov.id}`}  className='' >
+    <Link to={`/${mov.id}`}  className='p-0 m-0' >
         
 {/* <img id='poster' width={'100%'} src={`https://image.tmdb.org/t/p/original${mov 
       && mov.poster_path}`} /> */}
@@ -12,7 +12,7 @@ const Cards = ({mov}) => {
 
 
 
-      <div className="movie-card mx-3 mb-5 ">
+      <div className="movie-card p-0  mx-3 mb-5 ">
       <div width="100%" className="card" style={{ backgroundImage: `url(https://image.tmdb.org/t/p/original${mov && mov.poster_path})` }}>
         {/* <h1>hey</h1> */}
         

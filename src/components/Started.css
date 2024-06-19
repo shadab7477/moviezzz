@@ -67,6 +67,12 @@
     background-color: #0483ee;
 
 }
+.google{
+    /* letter-spacing: 1.5px; */
+    text-transform: uppercase;
+    color: rgb(57, 56, 56);
+    border-radius: 4px;
+}
 
 .description{
     color: hsla(0, 0%, 95.3%, 1);

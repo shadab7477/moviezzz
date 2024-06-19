@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import loginback from "./images/login-background.jpg"
 import logo1 from "./images/cta-logo-one.svg"
 import logo2 from "./images/cta-logo-two.png"
-
+import Signgoogle from './Signgoogle'
 const Started = () => {
   return (<>
   <div className="main">
@@ -16,6 +16,8 @@ const Started = () => {
         <button className='signup' >GET ALL THERE </button>
         
         </Link>
+<Signgoogle/>
+
         <p className='description' >
 
         Get Premier Access to Raya and the Last Dragon for an additional fee

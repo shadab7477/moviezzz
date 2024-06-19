@@ -2,9 +2,12 @@ import React from 'react'
 import "./Navbar.css"
 import { useState ,useEffect} from 'react'
 import ham from "./hamburg.png"
+import Signgoogle from '../components/Signgoogle'
 import logo from "./logo.svg"
+import { useAuth } from '../components/context/AuthContext'
 import { useNavigate } from 'react-router-dom'
 const Navi = () => {
+  const { currentUser,  signOut } = useAuth();
 
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
@@ -100,6 +103,19 @@ style={{cursor:"pointer"}}
         <button type="button" class="btn-close text-light bg-white " data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body text-center ">
+
+{
+  currentUser?(
+    <>
+    <img id='googleimg' src={currentUser.photoURL} alt="" />
+<h1> Welcome {currentUser.displayName} </h1>
+</>
+  ):(
+    <Signgoogle/>
+  )
+}
+
+
         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>

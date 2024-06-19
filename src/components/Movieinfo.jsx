@@ -91,7 +91,6 @@ const getimg=async()=>{
   setimgs(datas.data.results)
 }
 
-console.log(imgs);
 
 
 return (<>

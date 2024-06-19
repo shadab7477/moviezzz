@@ -7,7 +7,7 @@ import img4 from "./images/viewers-starwars.png"
 import img5 from "./images/viewers-national.png"
 
 import ReactPlayer from 'react-player'
-
+import { useAuth } from './context/AuthContext'
 import vid1 from "./videos/1564676115-marvel.mp4"
 import vid2 from "./videos/1564674844-disney.mp4"
 import vid3 from "./videos/1564676714-pixar.mp4"
@@ -15,6 +15,8 @@ import vid4 from "./videos/1608229455-star-wars.mp4"
 import vid5 from "./videos/1564676296-national-geographic.mp4"
 
 const Backimg = () => {
+  const { currentUser ,signOut } = useAuth();
+
   return (
     <div>
      <div className="row pt-4 gap-4 justify-content-center ">
@@ -56,6 +58,7 @@ const Backimg = () => {
         </div> 
         
 
+        {/* <h1>{currentUser.displayName}</h1> */}
 
     </div>
     

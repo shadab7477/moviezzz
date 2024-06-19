@@ -113,4 +113,6 @@ position: fixed;
 
   }
 
-  
+  #googleimg{
+    border-radius: 50%;
+  }
